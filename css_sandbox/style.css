@@ -1,0 +1,25 @@
+body {
+  background-color: #333;
+}
+#primary-heading {
+  color: brown;
+}
+
+#home,
+#about {
+  /* background-color: #f4f4f4; */
+  color: white;
+}
+
+/* Apply multiple elements */
+#home,
+#about {
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* Apply nested elements */
+#home p {
+  font-size: 20px;
+}

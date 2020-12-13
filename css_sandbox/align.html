@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alignment</title>
+    <style>
+      .container {
+        max-width: 960px;
+        margin: auto;
+      }
+      .clr {
+        clear: both;
+      }
+      .box {
+        background: #f4f4f4;
+        border: 1px solid #000;
+        padding: 10px;
+        margin: 15px;
+      }
+      .box p {
+        /* text-align: center; */
+        /* This will make sure that the edges are even (like Ctrl+J in word)*/
+        text-align: justify;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      #box-1 {
+        float: left;
+        width: 50%;
+      }
+      #box-2 {
+        float: right;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box-1">
+        <h2>My Box One</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aut
+          ullam cum ab, autem ea minima fuga aspernatur debitis? Expedita.
+        </p>
+      </div>
+      <div class="box" id="box-2">
+        <h2>My Box Two</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aut
+          ullam cum ab, autem ea minima fuga aspernatur debitis? Expedita.
+        </p>
+      </div>
+    </div>
+    <div class="clr"></div>
+    <div class="box" id="box-3">
+      <h2>My Box Two</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aut
+        ullam cum ab, autem ea minima fuga aspernatur debitis? Expedita.
+      </p>
+    </div>
+  </body>
+</html>
