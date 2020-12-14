@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Styling</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #344a72;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      a {
+        text-decoration: none;
+      }
+      .container {
+        margin: 30px auto;
+        max-width: 400px;
+        padding: 20px;
+      }
+      .form-wrapper {
+        background: #fff;
+        padding: 15px 25px;
+        line-height: 1.8em;
+      }
+      .form-wrapper h1,
+      p {
+        text-align: center;
+      }
+      .form-group label {
+        display: block;
+      }
+      .form-group input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+      .form-wrapper .btn {
+        width: 100%;
+        padding: 10px;
+        background: #49c1a2;
+        color: #fff;
+        margin-top: 10px;
+        display: block;
+        cursor: pointer;
+      }
+      .form-wrapper .btn:hover {
+        background: #37a08e;
+      }
+      .form-wrapper .btn-text {
+        font-size: 14px;
+      }
+      #footer {
+        font-size: 14px;
+        color: white;
+      }
+      #footer a {
+        color: #49c1a2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-wrapper">
+        <h1>Signup</h1>
+        <p>It's free and takes less than a minute.</p>
+        <form>
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="cofirm-password" />
+          </div>
+          <input type="submit" class="btn" value="Submit" />
+          <p class="btn-text">
+            By clicking here you have agreed to our <a href="#">Terms</a> &
+            <a href="#">Consitions</a>
+          </p>
+        </form>
+      </div>
+      <p id="footer">Already have an account? <a href="#">Login</a></p>
+    </div>
+  </body>
+</html>
