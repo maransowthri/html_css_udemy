@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Basics</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .flex-container {
+        display: flex;
+        background: #f4f4f4;
+        height: 500px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /*flex-direction: row-reverse;*/
+        /* flex-direction: row;*/
+        /*flex-direction: column-reverse;*/
+        /*flex-wrap: wrap;*/
+      }
+      .box {
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        background: #ccc;
+        border: 1px solid #444;
+        /*width: 50px;*/
+        /*height: 100px;*/
+        /*flex: 1;*/
+        /*flex-grow: 1;
+        flex: 1 0 200px;*/ /* The order is grow shrink basis*/
+      }
+      .box-1 {
+        /*flex-shrink: 0;*/
+        align-self: flex-start;
+      }
+      .box-2 {
+        /*flex-grow: 1;*/
+      }
+      .box-3 {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="box box-1">
+        <h1>Box 1</h1>
+      </div>
+      <div class="box box-2">
+        <h1>Box 2</h1>
+      </div>
+      <div class="box box-3">
+        <h1>Box 3</h1>
+      </div>
+    </div>
+  </body>
+</html>

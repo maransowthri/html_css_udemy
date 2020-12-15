@@ -18,6 +18,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="./css/mobile.css"
+    />
     <title>Hotel JS | Home</title>
   </head>
   <body>
@@ -27,9 +32,9 @@
         <div class="container">
           <h3 class="logo"><a href="index.html">HJS</a></h3>
           <ul>
-            <li><a class="current" href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a id="home" class="current" href="index.html">Home</a></li>
+            <li><a id="contact" href="contact.html">Contact</a></li>
+            <li><a id="about" href="about.html">About</a></li>
           </ul>
         </div>
       </nav>
@@ -99,5 +104,7 @@
     <footer id="main-footer">
       <p>Hotel JS &copy; 2020. All rights reserved.</p>
     </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

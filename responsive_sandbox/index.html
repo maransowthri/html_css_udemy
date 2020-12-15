@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Sandbox</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background: gray;
+        color: white;
+        text-align: center;
+        padding-top: 10px;
+      }
+      h1 {
+        display: none;
+      }
+      /* Smartphone */
+      @media (max-width: 500px) {
+        body {
+          background: red;
+        }
+        #smartphone h1 {
+          display: block;
+        }
+      }
+
+      @media (min-width: 501px) and (max-width: 768px) {
+        body {
+          background: blue;
+        }
+        #tablet h1 {
+          display: block;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="mobile.css"
+    />
+  </head>
+  <body>
+    <div id="widescreen"><h1>Wide Screen</h1></div>
+    <div id="normal"><h1>Normal</h1></div>
+    <div id="tablet"><h1>Tablet</h1></div>
+    <div id="smartphone"><h1>Smart Phone</h1></div>
+    <div id="landscape"><h1>Landscape</h1></div>
+  </body>
+</html>

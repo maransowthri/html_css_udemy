@@ -12,6 +12,11 @@
       content="hotel, hotels in sivaganga,hotels in south tamilnadu"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="./css/mobile.css"
+    />
     <title>Hotel JS | About</title>
   </head>
   <body>
@@ -21,9 +26,9 @@
         <div class="container">
           <h3 class="logo"><a href="index.html">HJS</a></h3>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a class="current" href="about.html">About</a></li>
+            <li><a id="home" href="index.html">Home</a></li>
+            <li><a id="contact" href="contact.html">Contact</a></li>
+            <li><a id="about" class="current" href="about.html">About</a></li>
           </ul>
         </div>
       </nav>
@@ -86,5 +91,6 @@
     <footer id="main-footer">
       <p>Hotel JS &copy; 2020. All rights reserved.</p>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
