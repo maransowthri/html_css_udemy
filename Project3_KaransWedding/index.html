@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- Utils -->
+    <link rel="stylesheet" href="./assets/css/utils.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Flip -->
+    <link rel="stylesheet" href="./assets/css/flipdown.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/img/favicon.ico"
+    />
+
+    <title>Justin's Wedding</title>
+  </head>
+
+  <body>
+    <!--CSS Spinner-->
+    <div class="spinner-wrapper">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+      </div>
+    </div>
+
+    <header class="hero">
+      <div id="navbar" class="navbar top">
+        <a href="./index.html"><h1>Justin's Wedding</h1></a>
+        <nav>
+          <ul>
+            <li><a href="#wedding-day">Day</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#family">Family</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>Justin</h1> 
+        <h1><span class="text-primary">weds</span></h1>
+        <h1>Selena</h1>
+        <p>Save the Date!</p>
+        <a href="#wedding-day" class="btn btn-primary"
+          ><i class="fas fa-chevron-right"></i> Read More</a
+        >
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Timer -->
+      <section id="wedding-day">
+        <div class="container">
+          <h2 class="masthead pt-3 text-center">
+            We Are Getting Married on
+            18 Oct 2020 
+          </h2>
+          <div class="divider-custom divider-dark">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+          </div>
+          <div class="row">
+            <div class="text-center">
+              <p class="lead">
+                Remaining days for our wedding ceremony, We are expecting all of
+                your presence.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="timer">
+              <input
+                type="hidden"
+                name="wedding_time"
+                id="wedding_time"
+                value="2020-12-31 06:00:00"
+              />
+              <div id="flipdown" class="flipdown"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Events -->
+      <section class="page-section bg-light mt-3" id="events">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="masthead pt-3">Events</h2>
+            </div>
+
+            <div class="divider-custom divider-dark">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image">
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h3>Engagement</h3>
+                          <p><strong>Friday, 28 Dec 2020, 10:45 AM</strong></p>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit necessitatibus deserunt vero accusamus fuga unde in inventore eaque, alias hic!</p></br>
+                              <a href="https://www.google.com" target="_blank">
+                                  <i class="fas fa-map-marker-alt fa-2x mb-2"></i>
+                              </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                    </div>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <h3>Wedding</h3>
+                        <p><strong>Friday, 28 Dec 2020, 10:45 AM</strong></p>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet commodi tenetur iste necessitatibus ipsum praesentium officia dicta vitae nesciunt quam?</p></br>
+                            <a href="https://www.google.com" target="_blank">
+                                <i class="fas fa-map-marker-alt fa-2x mb-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </section>
+
+      <!-- About Groom & Bride -->
+      <section class="page-section" id="about">
+        <div class="container">
+            <h2 class="text-center masthead pt-3">About Us</h2>
+            <div class="divider-custom divider-dark">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            
+            <!-- About Groom -->
+            <section id="about-groom" class="about-groom flex-columns">
+                <div class="row">
+                    <div class="column">
+                        <div class="column-1">
+                         <img src="./assets/img/carousel_item_3.jpg" alt="People" />
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="column-2">
+                        <h2>Justin Bieber</h2>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
+                            doloribus nemo delectus optio similique, facere doloremque! Nam
+                            minima nemo porro?Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Rem, impedit?
+                        </p>
+                        <a href="https://ww.google.com" class="btn btn-primary">
+                            <i class="fas fa-chevron"></i>
+                            Read More
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Groom -->
+            <section id="about-pride" class="about-pride flex-columns flex-reverse">
+                <div class="row">
+                    <div class="column">
+                        <div class="column-1">
+                          <img src="./assets/img/carousel_item_3.jpg" alt="People" />
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="column-2">
+                        <h2>Selena Gomez</h2>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
+                            doloribus nemo delectus optio similique, facere doloremque! Nam
+                            minima nemo porro?Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Rem, impedit?
+                        </p>
+                        <a href="https://ww.google.com" class="btn btn-primary">
+                            <i class="fas fa-chevron"></i>
+                            Read More
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+      </section>
+
+     <!-- Family -->
+      <section id="family" class="page-section family bg-light">
+        <div class="container">
+          <h2 class="masthead text-center">Our Family</h2>
+          <div class="divider-custom divider-dark">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+          </div>
+        </div>
+        <div class="flex-items">
+          <div>
+            <img src="./assets/img/carousel_item_2.jpg" alt="John Doe" />
+            <h4>Karan Sasthiri</h4>
+            <p>Brother</p>
+          </div>
+          <div>
+            <img src="./assets/img/carousel_item_2.jpg" alt="Jane Doe" />
+            <h4>Kaleeswaran</h4>
+            <p>Brother</p>
+          </div>
+          <div>
+            <img src="./assets/img/carousel_item_2.jpg" alt="John Doe" />
+            <h4>Mahesh Kannan</h4>
+            <p>Brother</p>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Contact -->
+      <section id="contact" class="icons mb-3">
+        <h2 class="text-center masthead pt-3">Reach Us On</h2>
+        <div class="divider-custom divider-dark">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <div class="flex-items">
+          <div>
+              <a href="#">
+                  <i class="fab fa-facebook fa-3x"></i>
+              </a>
+          </div>
+          <div>
+              <a href="#">
+                  <i class="fab fa-twitter fa-3x"></i>
+              </a>
+          </div>
+          <div>
+              <a href="#">
+                  <i class="fab fa-instagram fa-3x"></i>
+              </a>
+          </div>
+          <div>
+              <a href="#">
+                  <i class="fas fa-phone fa-3x"></i>
+              </a>
+          </div>
+      </section>
+
+    <footer class="footer bg-dark">
+      <p>Copyright &copy; 2020 - Online Invitation</p>
+    </footer>
+
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/flipdown.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
