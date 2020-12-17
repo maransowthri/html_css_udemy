@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psuedo Selectors</title>
+    <style>
+      li {
+        padding: 0.25rem;
+        margin: 0.25rem;
+        list-style: none;
+      }
+
+      ul li:first-child {
+        background: #f4f4f4;
+      }
+
+      /* Selecting a particular index*/
+      ul li:nth-child(3) {
+        background: #333 !important;
+        color: #fff;
+      }
+
+      /* Selecting set of indices*/
+      ul li:nth-child(3n + 0) {
+        background: orange;
+      }
+
+      /* Every 3rd index after 7th */
+      ul li:nth-child(3n + 7) {
+        background: purple;
+      }
+
+      /* Every odd or even*/
+      ul li:nth-child(odd) {
+        background: #f4f4f4;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+      <li>item 6</li>
+      <li>item 7</li>
+      <li>item 8</li>
+      <li>item 9</li>
+      <li>item 10</li>
+      <li>item 11</li>
+      <li>item 12</li>
+      <li>item 13</li>
+      <li>item 14</li>
+      <li>item 15</li>
+      <li>item 16</li>
+      <li>item 17</li>
+      <li>item 18</li>
+      <li>item 19</li>
+      <li>item 20</li>
+    </ul>
+  </body>
+</html>
