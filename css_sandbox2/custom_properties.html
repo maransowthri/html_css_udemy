@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Properties</title>
+    <style>
+      /* Global Scope Vars */
+      :root {
+        --primary-color: steelblue;
+        --secondary-color: skyblue;
+        --light-color: #f4f4f4;
+        --max-width: 768px;
+      }
+      /* Block level vars (accessible only inside box class)*/
+      .box {
+        --width-box-1: 5;
+        --width-box-2: 1;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 1.5rem;
+      }
+
+      header h1 {
+        text-align: center;
+        background: var(--primary-color);
+        padding: 1rem;
+        color: #fff;
+        border-bottom: 2px solid var(--secondary-color);
+      }
+
+      .container {
+        display: flex;
+        margin: auto;
+        text-align: center;
+        padding: 1rem;
+        max-width: var(--max-width);
+      }
+
+      .container .box {
+        background: var(--primary-color);
+        padding: 1rem;
+        margin: 0 0.5rem;
+        border-bottom: 2px solid var(--secondary-color);
+        color: #fff;
+      }
+
+      .box.box-1 {
+        flex: var(--width-box-1);
+      }
+
+      .box.box-2 {
+        flex: var(--width-box-2);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hello World</h1>
+    </header>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="box box-1">
+            <h1>Hello World</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab,
+              quis.
+            </p>
+          </div>
+          <div class="box box-2">
+            <h1>Hello World</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+              assumenda.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
