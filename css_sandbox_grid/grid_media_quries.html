@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Media Queries</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 0.5rem;
+      }
+      @media (max-width: 700px) {
+        .container {
+          grid-template-columns: auto auto;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .container {
+          grid-template-columns: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>Heading</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel minus
+          perspiciatis nam dolorem beatae error provident laudantium obcaecati
+          tempora accusantium.
+        </p>
+      </div>
+      <div class="box">
+        <h1>Heading</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel minus
+          perspiciatis nam dolorem beatae error provident laudantium obcaecati
+          tempora accusantium.
+        </p>
+      </div>
+      <div class="box">
+        <h1>Heading</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel minus
+          perspiciatis nam dolorem beatae error provident laudantium obcaecati
+          tempora accusantium.
+        </p>
+      </div>
+      <div class="box">
+        <h1>Heading</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel minus
+          perspiciatis nam dolorem beatae error provident laudantium obcaecati
+          tempora accusantium.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
