@@ -1,0 +1,100 @@
+:root {
+  --primary-color: coral;
+  --secondary-color: chocolate;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+#navbar ul li {
+  padding: 1rem 1rem;
+  position: relative;
+}
+
+#navbar ul li:hover {
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+}
+
+#navbar ul li:hover a {
+  color: #fff;
+}
+
+#navbar ul li a {
+  color: #333;
+  text-decoration: none;
+}
+#navbar ul ul {
+  display: none;
+}
+
+#navbar ul li:hover ul,
+#navbar ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  margin-top: 1rem;
+}
+
+#navbar ul li:hover ul li {
+  background: #e7e7e7;
+}
+
+#navbar ul li:hover ul li a {
+  color: #333;
+}
+
+#navbar ul li:hover ul li:hover {
+  background: #e0e0e0;
+  color: inherit;
+}
+
+#navbar ul li:hover ul li span {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.2rem;
+  float: right;
+  border-radius: 10px;
+}
+
+#navbar ul li:hover ul li:hover span {
+  background: var(--secondary-color);
+}
+
+#home {
+  background: var(--primary-color);
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+#home h1 {
+  font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+  #navbar ul {
+    flex-direction: column;
+  }
+
+  #navbar ul li:hover ul {
+    width: 100%;
+    position: relative;
+  }
+}

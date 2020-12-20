@@ -57,7 +57,8 @@ img {
   display: flex;
 }
 
-.navbar a h1 {
+.navbar .logo {
+  font-size: 1.5rem;
   color: #fff;
 }
 
@@ -94,6 +95,16 @@ img {
 
 .hero .content h1 {
   font-size: 55px;
+}
+
+.hero .content h1:nth-child(1) {
+  transform: translateY(-100px);
+  animation: animateGroomTitle 2s ease-in-out forwards;
+}
+
+.hero .content h1:nth-child(3) {
+  transform: translateX(-100px);
+  animation: animateBrideTitle 2s ease-in-out forwards;
 }
 
 .hero .content p {
@@ -167,6 +178,11 @@ img {
   }
 }
 
+#family h2 {
+  margin: 1.5rem;
+  padding: 1rem;
+}
+
 #about .about-groom,
 #about .about-pride {
   padding: 0 15px;
@@ -238,4 +254,16 @@ img {
 
 #contact .flex-items {
   flex-direction: row;
+}
+
+@keyframes animateGroomTitle {
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes animateBrideTitle {
+  to {
+    transform: translateX(0px);
+  }
 }
