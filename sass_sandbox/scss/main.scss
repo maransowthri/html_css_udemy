@@ -1,0 +1,32 @@
+@import "variables";
+@import "base";
+@import "utils";
+@import "functions";
+
+header {
+  background: $dark-color;
+  color: set-text-color($dark-color);
+  padding: 1rem;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.section {
+  padding: 3rem;
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  &-a {
+    background: $primary-color;
+    color: set-text-color($primary-color);
+  }
+
+  &-b {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}

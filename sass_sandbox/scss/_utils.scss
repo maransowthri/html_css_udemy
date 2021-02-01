@@ -1,0 +1,47 @@
+@import "variables";
+@import "functions";
+
+// %btn-shared {
+//   display: inline-block;
+//   text-decoration: none;
+//   color: $dark-color;
+//   cursor: pointer;
+//   padding: 1rem;
+//   border-radius: 0.4rem;
+//   margin: 1.5rem 0;
+// }
+
+.btn {
+  //   @extend %btn-shared;
+  display: inline-block;
+  text-decoration: none;
+  color: $dark-color;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  margin: 1.5rem 0;
+
+  &-dark {
+    background: $dark-color;
+    color: $light-color;
+
+    &:hover {
+      //   background: $light-color;
+      color: $dark-color;
+      @include transform(rotate(25deg));
+      background: darken($color: $light-color, $amount: 40%);
+    }
+  }
+
+  &-light {
+    background: $light-color;
+    color: $dark-color;
+
+    &:hover {
+      //   background: $dark-color;
+      color: $light-color;
+      @include transform(rotate(25deg));
+      background: lighten($color: $light-color, $amount: 40%);
+    }
+  }
+}
